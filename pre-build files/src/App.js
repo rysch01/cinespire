@@ -25,8 +25,7 @@ import LocalSearcher from './LocalSearcher.js'
 // Times API                                          5
 // Geocode API                                        5
 // Total so far                                       90
-
-// Need to fix dropdown as a link
+// Regular Maps JS API is extra 5 pts
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);

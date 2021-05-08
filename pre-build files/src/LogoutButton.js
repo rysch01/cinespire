@@ -10,7 +10,6 @@ const LogoutButton = ({setCurrentUser, setColorTheme}) => {
                 setColorTheme('light')
             } 
         catch(error) {
-            console.log(error)
         }
     }
 

@@ -12,15 +12,7 @@ const LoginChecker = ({currentUser}) => {
             let userData = doc.data();
         })
 
-        
-        // .then(
-        //     (response)=>{
-        //         response.forEach((key)=>{
-        //             let theme =
-        //             console.log('HERE IT IS' + JSON.stringify(key) +':' +key.data().theme)
-        //         })
-        //     }
-        // )
+
 
         return (
             <div>
