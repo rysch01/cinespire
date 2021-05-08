@@ -137,7 +137,7 @@ const MainSection = ({pageOpen, movieSearcherCurrentResults, setMovieSearcherCur
   } else {
     return (
       <div>
-        <LocalSearcher setSelectedMovie={setSelectedMovie} colorTheme={colorTheme}/>
+        <LocalSearcher setSelectedMovie={setSelectedMovie} colorTheme={colorTheme} setPageOpen={setPageOpen} setmsOpen={setmsOpen} setmlOpen={setmlOpen} setlsOpen={setlsOpen}/>
 
       </div>
     )
