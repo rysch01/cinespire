@@ -65,7 +65,10 @@ function App() {
      }
   }, [])
 
+
   if(firebase.auth().currentUser) {
+    
+    
     return (
       
       <div className={'App'}>
