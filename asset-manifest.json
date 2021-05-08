@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/cinespire/static/css/main.729b099f.chunk.css",
-    "main.js": "/cinespire/static/js/main.8e7739c6.chunk.js",
-    "main.js.map": "/cinespire/static/js/main.8e7739c6.chunk.js.map",
+    "main.css": "/cinespire/static/css/main.914c8dee.chunk.css",
+    "main.js": "/cinespire/static/js/main.a6e780b8.chunk.js",
+    "main.js.map": "/cinespire/static/js/main.a6e780b8.chunk.js.map",
     "runtime-main.js": "/cinespire/static/js/runtime-main.b08168a7.js",
     "runtime-main.js.map": "/cinespire/static/js/runtime-main.b08168a7.js.map",
-    "static/js/2.29ae6380.chunk.js": "/cinespire/static/js/2.29ae6380.chunk.js",
-    "static/js/2.29ae6380.chunk.js.map": "/cinespire/static/js/2.29ae6380.chunk.js.map",
+    "static/js/2.5c1dcc3b.chunk.js": "/cinespire/static/js/2.5c1dcc3b.chunk.js",
+    "static/js/2.5c1dcc3b.chunk.js.map": "/cinespire/static/js/2.5c1dcc3b.chunk.js.map",
     "static/js/3.5fa31edb.chunk.js": "/cinespire/static/js/3.5fa31edb.chunk.js",
     "static/js/3.5fa31edb.chunk.js.map": "/cinespire/static/js/3.5fa31edb.chunk.js.map",
     "index.html": "/cinespire/index.html",
-    "static/css/main.729b099f.chunk.css.map": "/cinespire/static/css/main.729b099f.chunk.css.map",
-    "static/js/2.29ae6380.chunk.js.LICENSE.txt": "/cinespire/static/js/2.29ae6380.chunk.js.LICENSE.txt"
+    "static/css/main.914c8dee.chunk.css.map": "/cinespire/static/css/main.914c8dee.chunk.css.map",
+    "static/js/2.5c1dcc3b.chunk.js.LICENSE.txt": "/cinespire/static/js/2.5c1dcc3b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b08168a7.js",
-    "static/js/2.29ae6380.chunk.js",
-    "static/css/main.729b099f.chunk.css",
-    "static/js/main.8e7739c6.chunk.js"
+    "static/js/2.5c1dcc3b.chunk.js",
+    "static/css/main.914c8dee.chunk.css",
+    "static/js/main.a6e780b8.chunk.js"
   ]
 }
