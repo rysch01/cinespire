@@ -28,7 +28,6 @@ const SigninForm = ({setCurrentUser, setColorTheme, setPageOpen, setmsOpen, setm
                               }) 
 
                 } else {
-                    alert('failed')
                     setCurrentUser(null);
                 }
             }

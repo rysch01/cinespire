@@ -23,7 +23,7 @@ const Watchlist = ({currentUser, setUpdatingWatchlistFlag, updatingWatchlistFlag
 
     async function getMoreDetails(movieTitle) {
         let selectedMovieMoreInfo = await axios({
-            url:      `http://www.omdbapi.com/?&apikey=fb8a95d8&t=${movieTitle}&type=movie&plot=full`,
+            url:      `https://www.omdbapi.com/?&apikey=fb8a95d8&t=${movieTitle}&type=movie&plot=full`,
             method:   'get',
           })
     
