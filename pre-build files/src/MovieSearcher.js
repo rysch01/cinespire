@@ -77,8 +77,8 @@ function CurrentCard({selectedMovie, setSelectedMovie, setUpdatingWatchlistFlag,
 
     async function SearchReviews() {
       let day = '01';
-      let monthNumPrior = '01';  //Lower Search
-      let monthNum = '01';     //Upper search bound
+      let monthNumPrior = '01';   //Lower Search
+      let monthNum = '01';        //Upper search bound
       let yearPrior = parseInt(selectedMovie.Year);
       let year = parseInt(selectedMovie.Year);
 
@@ -154,50 +154,16 @@ function CurrentCard({selectedMovie, setSelectedMovie, setUpdatingWatchlistFlag,
               query: selectedMovie.Title,
             }
           })
-          console.log(search_result)
           setCurrentReviewURL(search_result.data.results[0].link.url)
           setCurrentReviewSuggestedText('Suggested NYTimes Review ' + JSON.stringify(search_result.data.results[0].link.suggested_link_text))
           
-          // return (
-          //   <div>
-          //     <a href={search_result.data.results[0].link.url}>Suggested NYTimes Article</a>
-          //   </div>
           
       } catch {
           setCurrentReviewURL('')
           setCurrentReviewSuggestedText('No Suggested Articles Available')
-        // return (
-        //   <div>
-        //     <p>No Article Retrived</p>
-        //   </div>
-        // )
       }
-      // alert(currentReviewURL)
 
     }
-
-
-    // async function searchScript() {
-    //   try {
-    //     let search_result = await axios({
-    //       url:      `https://www.stands4.com/services/v2/scripts.php`,
-    //       method:   'get',
-    //       params: {
-    //         uid: '8828',
-    //         tokenid:'7knlRdh7DMg62erC',
-    //         term: selectedMovie.Title,
-    //         format: 'json',
-    //       }
-    //     }).data
-    //     alert(JSON.stringify(search_result))
-
-    //   } catch {
-    //     alert()
-    //   }
-    // }
-    // searchScript()
-    
-
 
 
     
@@ -241,7 +207,7 @@ function CurrentCard({selectedMovie, setSelectedMovie, setUpdatingWatchlistFlag,
             <p>{selectedMovie.Plot}</p>
           </div>
           <button className = 'ReviewButton' onClick={(selectedMovie)=>{SearchReviews()}}>Check for NYTimes Movie Reviews!</button>
-          <div className='ReviewLink'><p>Note: This feature works best for recent and/or culturally significant movies (i.e. The Godfather, Star Wars Ep. VII, Godzilla v. Kong)</p><a href={currentReviewURL}>{currentReviewSuggestedText}</a></div>
+          <div className='ReviewLink'><p>Note: This feature works best for recent and/or culturally significant movies (i.e. The Godfather, Star Wars Ep. VII, Godzilla v. Kong)</p><a href={currentReviewURL} target="_blank">{currentReviewSuggestedText}</a></div>
           <button className='BacklogButton' onClick={()=>{addToWatchList(selectedMovie)}}>Add to WatchList!</button>
           <button className='WatchedButton' onClick={()=>{alreadySeen(selectedMovie)}}>Already Seen It!</button>
           <button className='Hide' onClick={()=>{setSelectedMovie('')}}>Hide</button>

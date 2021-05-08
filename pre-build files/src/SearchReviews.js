@@ -7,7 +7,6 @@ import { doc, updateDoc, arrayUnion, arrayRemove } from "firebase/firestore";
 import "firebase/database";
 
 async function SearchReviews({currentReviewURL}) {
-    alert(currentReviewURL)
     if(currentReviewURL != ''){
         try{
             return (

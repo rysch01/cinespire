@@ -35,11 +35,7 @@ const Watchlist = ({currentUser, setUpdatingWatchlistFlag, updatingWatchlistFlag
             <h2>Watch List</h2>
             <div>
                 {watchlist.map((movie)=> {
-                    
-                    // let keywl = Object.keys(watchlist).filter((kmovie)=>{return watchlist[kmovie].imdbID==movie.imdbID}).map((key)=>{
-                    //     alert(key)
-                    // })
-                    // console.log(keywl)
+                  
                     return (
                         <div key = {movie.id+'wl'+i++} className={'WatchlistEntry'+colorTheme}>
                             <p>{(movie.Title)} </p>
